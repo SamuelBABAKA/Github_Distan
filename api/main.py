@@ -17,6 +17,10 @@ def health():
 @app.get("/items")
 def list_items():
     return items
+
+@app.get("/nouveau")
+def nouveau():
+    return {"status": "nouveau"}
  
  
 @app.post("/items")
